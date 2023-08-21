@@ -1,36 +1,14 @@
-# Create Sveltekit + Tailwind CSS Application
+# ISS-ER!
+Wherever the ISS goes, we follow!.
 
-## Version
-```
-  "@sveltejs/kit": "^1.5.0",
-  "svelte": "^3.54.0",
-```
+![ISSR Screenshot](https://gcdnb.pbrd.co/images/8wTon1LhuHAj.png)
 
-## Installation
+Don't do drugs.
+## Built with
+[Sveltekit](https://kit.svelte.dev)
+[LeafletJS](https://leafletjs.com/)
+[TailwindCSS](tailwindcss.com/)
 
-##### <code>folder-name</code> can be anything
+Used [https://github.com/SikandarJODD/SvelteKit-min](https://github.com/SikandarJODD/SvelteKit-min) for rapid development.
 
-```bash
-  git clone https://github.com/SikandarJODD/SvelteKit-min.git folder-name
-```
-
-##### Install the code using
-
-```bash
-  npm i
-```
-
-##### Run the Code
-
-```bash
-  npm run dev -- --open
-
-```
-
-### Output :
-
-<hr/>
-
-![screenshot](output.png)
-
-<hr/>
+copyright 2023, Darth Vader
