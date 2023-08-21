@@ -8,9 +8,9 @@ const createIssStore = () => {
 
     const fetchIssPosition = async () => {
         try {
-            const response = await fetch('https://api.wheretheiss.at/v1/satellites/25544');
+            const response = await fetch(`${import.meta.env.VITE_ISS_PROXY}http:/api.open-notify.org/iss-now.json`);
             const data = await response.json();
-            const { longitude, latitude } = data;
+            const { longitude, latitude } = data.iss_position;
             set({ longitude, latitude });
         } catch (error) {
             console.error('Error fetching ISS position:', error);
