@@ -86,8 +86,8 @@
                     })
                     .addTo(map);
 
-                // Update the map view to the new position
-                map.setView([position.latitude, position.longitude], 5);
+                // pan the map view to the new position
+                map.panTo([position.latitude, position.longitude]);
             }, 5000);
         }
     });
