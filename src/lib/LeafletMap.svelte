@@ -3,8 +3,6 @@
     import { browser } from "$app/environment";
     import { issStore } from "$lib/stores.js"; // Update the import path based on your project structure
 
-    console.log(import.meta.env.VITE_JAWG_ACCESS_TOKEN);
-
     let mapElement;
     let map;
 
@@ -21,11 +19,6 @@
     // Fetch ISS position when the component is mounted
     setInterval(() => {
         issStore.fetchIssPosition();
-        console.log(
-            "Fetching ISS position...",
-            position.latitude,
-            position.longitude
-        );
     }, 5000); // Update the position every 5 seconds
 
     onMount(async () => {
@@ -65,12 +58,6 @@
             // Update marker position and view to ISS position every 5 seconds
             setInterval(() => {
                 issStore.fetchIssPosition();
-                console.log(
-                    "Fetching ISS position...",
-                    position.latitude,
-                    position.longitude
-                );
-
                 // Remove the existing marker
                 issMarker.remove();
 
